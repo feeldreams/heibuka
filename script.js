@@ -24,7 +24,7 @@ function initengahan(){
   document.getElementById("By").onclick = function() {if(fungsi==1){pertanyaan();} if(fungsi==2){menuju();}}
   async function menuju(){await swals.fire('OK!', 'Kirim jawabannya ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
   
-  vketik1=kalimat.innerHTML;kalimat.innerHTML = "";kalimatb.innerHTML = "";
+  vketik1=kalimat.innerHTML;kalimat.innerHTML = "";
   function mulaiketik1(){
   new TypeIt("#kalimat", {
   strings: ["" + vketik1], startDelay: 400, speed: 20, cursor: false, deleteSpeed: 20, breakLines: false, waitUntilVisible: true, lifelike: true,
